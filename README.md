@@ -11,3 +11,7 @@ Binary search tree fucntions include:
   2.inorder traversal
   
 
+
+Sorting techniques:
+  1.quicksort 
+  
