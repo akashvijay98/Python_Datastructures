@@ -1,0 +1,28 @@
+class Interval:
+    def __init__(self,start,end):
+        self.start=start
+        self.end=end
+    
+    def disp(self):
+        print("[" + str(self.start) + ","+ str(self.end)+"]")
+        
+def merge(intervals):
+    m=[]
+    start=intervals[0].start
+    end=intervals[0].end
+        
+    for i in range(1,len(intervals)):
+        interval=intervals[i]
+        if interval.start<end:
+            end=max(interval.end,end)
+        else:
+            m.append(Interval(start,end))
+            start=interval.start
+            end=interval.end
+    m.append(Interval(start,end))
+    return m
+          
+def main():
+    for i in merge([Interval(2,4),Interval(5,9),Interval(6,7)]):
+        i.disp()
+main()
