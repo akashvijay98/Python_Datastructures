@@ -9,7 +9,9 @@ LinkedList functions include
   6.check if linked list is a palindrome
   *7.rearrange a linked list:
         divide linked list into two halves and reverse the second linked list, then arrange the elements in alternative positions.
+   8.implementation of Trie (both methods)
    
+   9.intervals overlapping 
   
  
 Binary search tree fucntions include:
